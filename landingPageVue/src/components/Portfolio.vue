@@ -60,3 +60,15 @@
     </div>
   </div>
 </template>
+
+<!-- no functional revisar  -->
+<!-- <script setup>
+  import { onMounted } from 'vue'
+  import SimpleLightbox from 'simplelightbox'
+  import 'simplelightbox/dist/simple-lightbox.min.css'
+
+  onMounted(() => {
+  new SimpleLightbox('#portfolio a.portfolio-box')
+  })
+
+</script> -->
