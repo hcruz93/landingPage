@@ -33,3 +33,4 @@ npm run build
 ```sh
 npm run lint
 ```
+https://www.npmjs.com/package/vue-easy-lightbox#direct-download
