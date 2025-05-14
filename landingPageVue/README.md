@@ -1,36 +1,45 @@
-# landingpagevue
+# Landing page 
 
-This template should help get you started developing with Vue 3 in Vite.
+Como configurar el proyecto para correrlo correctamente.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+### Clonar el repositorio
 
 ```sh
+git clone https://github.com/hcruz93/landingPage.git
+```
+
+### Instalar npm
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+**Nota:** situarse en la carpeta **landingPageVue**  para instalar
+todas las dependencias del proyecto.
+
+### Correr el proyecto
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+
+
+### Links utiles
+
+- https://www.npmjs.com/package/vue-easy-lightbox#direct-download
+
+- https://www.npmjs.com/package/json-server
+
+
+## Backend
+
+situarte en la carpeta back
+
+- correr el siguiente comando
 
 ```sh
-npm run build
+npx json-server db.json
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-https://www.npmjs.com/package/vue-easy-lightbox#direct-download
+- Si te pide instalar un paquete di que si (y)
