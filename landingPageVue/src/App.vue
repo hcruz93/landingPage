@@ -11,13 +11,10 @@
 </template>
 
 <script setup>
-  import Navbar from './components/Navbar.vue';
-  import Footer from './components/Footer.vue';
-  // import { RouterLink, RouterView } from 'vue-router'
+  import Navbar from './components/Navbar.vue'
+  import Footer from './components/Footer.vue'
+  import { RouterView } from 'vue-router'
   import { onMounted } from 'vue'
-  // import SimpleLightbox from 'simplelightbox'
-  // import 'simplelightbox/dist/simple-lightbox.min.css'
-  import 'bootstrap/dist/js/bootstrap.bundle.min.js' // Esto importa Bootstrap JS
 
   onMounted(() => {
     const navbarShrink = () => {
@@ -29,13 +26,12 @@
         navbarCollapsible.classList.add('navbar-shrink')
       }
     }
-
     navbarShrink()
     document.addEventListener('scroll', navbarShrink)
 
     const mainNav = document.querySelector('#mainNav')
-    if (mainNav) {
-      new bootstrap.ScrollSpy(document.body, {
+    if (mainNav && window.bootstrap) {
+      new window.bootstrap.ScrollSpy(document.body, {
         target: '#mainNav',
         rootMargin: '0px 0px -40%',
       })
@@ -50,12 +46,7 @@
         }
       })
     })
-
-    // new SimpleLightbox({
-    //   elements: '#portfolio a.portfolio-box'
-    // })
-  })
-
+  }) 
 </script>
 
 
