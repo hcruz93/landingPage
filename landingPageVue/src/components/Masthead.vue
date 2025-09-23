@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue';
+import { reactive } from 'vue'
 // Agrupar los títulos en un objeto reactivo
 const titles = reactive({
   main: "Learn, Grow, Succeed",

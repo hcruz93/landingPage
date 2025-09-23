@@ -1,16 +1,25 @@
 {
-  "clientes": [
+  "usuarios": [
     {
-      "id": "1",
-      "name": "Laura Perez"
+      "name": "Edna",
+      "email": "edna@gmail.com",
+      "phone": "5569849852",
+      "message": "Quiero informes",
+      "id": "613c"
     },
     {
-      "id": "2",
-      "name": "Gerardo Lopez"
+      "id": "78d1",
+      "name": "kippy",
+      "email": "kippy@gmail.com",
+      "phone": "5569849852",
+      "message": "hola como estas"
     },
     {
-      "id": "3",
-      "name": "Luisa Martinez"
+      "id": "7d42",
+      "name": "alejandro",
+      "email": "alex@gmail.com",
+      "phone": "5560568474",
+      "message": "este es mi mensaje de prueba"
     }
   ]
 }

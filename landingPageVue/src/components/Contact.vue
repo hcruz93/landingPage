@@ -99,6 +99,7 @@
 
 <script setup>
 import { ref } from "vue"
+import axios from "axios"
 
 // Estado del formulario
 const form = ref({
@@ -111,18 +112,31 @@ const form = ref({
 const success = ref(false)
 const error = ref(false)
 
-const handleSubmit = () => {
+const handleSubmit = async () => {
   success.value = false
   error.value = false
 
   // Aquí puedes enviar los datos a tu backend con fetch o axios
   if (form.value.name && form.value.email && form.value.phone && form.value.message) {
-    console.log("Datos enviados:", form.value)
-    success.value = true
-    // Resetear formulario
+    try {
+      await sendInformation()
+      success.value = true
+      console.log("Datos enviados:", form.value)
+      // Resetear formulario
     form.value = { name: "", email: "", phone: "", message: "" }
+    } catch (error) {
+      console.error("Error en el envío:", err)
+      error.value = true
+    }
   } else {
     error.value = true
   }
+}
+
+const sendInformation = async () => {
+  // Cambia la URL a tu API real
+  const response = await axios.post("http://localhost:3000/usuarios", form.value)
+  console.log("Guardado en backend:", response.data)
+  return response.data
 }
 </script>
