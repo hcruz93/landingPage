@@ -22,9 +22,25 @@
 import { ref } from 'vue'
 
 const arrayLogos = [
-  {logo:'bi-gem fs-1 text-primary', title:'Sturdy Themes', description:'Our themes are updated regularly to keep them bug free!'},
-  {logo:'bi-laptop fs-1 text-primary', title:'Up to Date', description:'All dependencies are kept current to keep things fresh.'},    
-  {logo:'bi-globe fs-1 text-primary', title:'Ready to Publish', description:'You can use this design as is, or you can make changes!'},
-  {logo:'bi-heart fs-1 text-primary', title:'Made with Love', description:'Is it really open source if it\'s not made with love?'}
+  {
+    logo:'bi-gem fs-1 text-primary', 
+    title:'Quality Courses', 
+    description:'Our courses are designed and updated regularly to give you the best learning experience.'
+  },
+  {
+    logo:'bi-laptop fs-1 text-primary', 
+    title:'Up to Date', 
+    description:'Our courses are constantly updated so you can learn the latest technologies and methods.'
+  },    
+  {
+    logo:'bi-globe fs-1 text-primary', 
+    title:'Ready to Learn', 
+    description:'Start studying right away, at your own pace, from any device.'
+  },
+  {
+    logo:'bi-heart fs-1 text-primary', 
+    title:'Made for You', 
+    description:'Each course is carefully designed with your growth and professional future in mind.'
+  }
 ]
 </script>
